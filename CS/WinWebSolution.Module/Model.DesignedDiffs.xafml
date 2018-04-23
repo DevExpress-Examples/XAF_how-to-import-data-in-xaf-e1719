@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application Title="WinWebSolution" Logo="ExpressAppLogo">
+	<NavigationItems IsNewNode="True">
+		<Item Id="DefaultID" Caption="Default" ImageName="Attention" Index="0" IsNewNode="True">
+			<Item Id="Person_ListViewID" Caption="Person" ViewID="Person_ListView" Visible="True" Shortcut="Control+P" Index="0" IsNewNode="True" />
+		</Item>
+	</NavigationItems>
+	<Validation>
+		<Rules>
+			<RuleRequiredField Id="RuleRequiredFieldForPersonFirstName" TargetType="DevExpress.Persistent.BaseImpl.Person" TargetPropertyName="FirstName" TargetContextIDs="Save" IsNewNode="True" />
+			<RuleRequiredField Id="RuleRequiredFieldForPhoneNumberNumber" TargetType="DevExpress.Persistent.BaseImpl.PhoneNumber" TargetPropertyName="Number" TargetContextIDs="Save" IsNewNode="True" />
+		</Rules>
+	</Validation>
+</Application>
